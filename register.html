@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,15 +37,209 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Skriv med en der forstår dig</h2>
+          <p>Skriv dig op til en samtale med en der er klar til at lytte</p>
         </article>
-        <form id="webform"></form>
+
+        <form>
+          <fieldset>
+            <legend>
+              <h3>Hvad drejer det sig om</h3>
+            </legend>
+
+            <label for="Hjertesorger">
+              <input
+                type="checkbox"
+                id="Hjertesorger"
+                name="emne"
+                value="Hjertesorger"
+              />
+              Hjertesorger
+            </label>
+            <label for="Sorg og tab">
+              <input
+                type="checkbox"
+                id="sorg_og_tab"
+                name="emne"
+                value="sorg_og_tab"
+              />
+              Sorg og tab
+            </label>
+            <label for="Stress og overvældelse">
+              <input
+                type="checkbox"
+                id="Stress_og_overvældelse"
+                name="emne"
+                value="Stress_og_overvældelse"
+              />
+              Stress og overvældelse
+            </label>
+            <label for="Skuffelse eller smerte">
+              <input
+                type="checkbox"
+                id="Skuffelse_eller_smerte"
+                name="emne"
+                value="Skuffelse_eller_smerte"
+              />
+              Skuffelse eller smerte
+            </label>
+          </fieldset>
+          <form>
+            <label for="message">Andet?</label>
+            <textarea name="message" id="message"> </textarea>
+          </form>
+          
+        </form>
+<form>
+          <fieldset>
+            <legend>
+              <h3>Hvor slemt er det fra 1-10</h3>
+            </legend>
+
+            <label for="1">
+              <input
+                type="radio"
+                id="1"
+                name="omfang"
+                value="1"
+              />
+              1
+            </label>
+            <label for="2">
+              <input
+                type="radio"
+                id="2"
+                name="omfang"
+                value="2"
+              />
+              2
+            </label>
+            <label for="3">
+              <input
+                type="radio"
+                id="3"
+                name="omfang"
+                value="3"
+              />
+              3
+            </label>
+            <label for="4">
+              <input
+                type="radio"
+                id="4"
+                name="omfang"
+                value="4"
+              />
+              4
+            </label>
+             <label for="5">
+              <input
+                type="radio"
+                id="5"
+                name="omfang"
+                value="5"
+              />
+              5
+            </label>
+             <label for="6">
+              <input
+                type="radio"
+                id="6"
+                name="omfang"
+                value="6"
+              />
+              6
+            </label>
+             <label for="7">
+              <input
+                type="radio"
+                id="7"
+                name="omfang"
+                value="7"
+              />
+              7
+            </label>
+             <label for="8">
+              <input
+                type="radio"
+                id="8"
+                name="omfang"
+                value="8"
+              />
+              8
+            </label>
+             <label for="9">
+              <input
+                type="radio"
+                id="9"
+                name="omfang"
+                value="9"
+              />
+              9
+            </label>
+             <label for="10">
+              <input
+                type="radio"
+                id="10"
+                name="omfang"
+                value="10"
+              />
+              10
+            </label>
+          </fieldset>
+        <!--  <form id="webform">
+          <label>First name</label>
+          <input type="text" />
+          <p>Error message</p>
+
+          <button>Submit button</button>
+        </form>
+        <form id="webform">
+          <label>Last name</label>
+          <input type="text" />
+          <p>Error message</p>
+
+          <button>Submit button</button>
+        </form>
+        <form id="webform">
+          <label>Email</label>
+          <input type="email" />
+          <p>Error message</p>
+
+          <button>Submit button</button>
+        </form>-->
+        <form id="webform">
+          <label>First name</label>
+          <input type="text" />
+          <p>Error message</p>
+
+          <label>Last name</label>
+          <input type="text" />
+          <p>Error message</p>
+ <label>Telefon nummer</label>
+          <input type="tel" />
+          <p>Error message</p>
+          <label>
+          <label>Email</label>
+          <input type="email" />
+          <p>Error message</p>
+          <label>
+            <input type="checkbox" />
+            Accept terms
+          </label>
+          <button>Submit</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">
+            Fornavn <br />
+            Efternavn<br />
+            Dato <br />
+            Alder <br />
+            Email
+          </p>
         </article>
       </section>
     </main>
