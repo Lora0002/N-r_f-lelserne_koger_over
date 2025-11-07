@@ -209,20 +209,22 @@
           <button>Submit button</button>
         </form>-->
         <form id="webform">
-          <label>First name</label>
-          <input type="text" />
-          <p>Error message</p>
+          <div class="form-group">
+          <label for="name">Fulde navn</label>
+          <input type="text" id="name" name="full_name" required  />
+          
+          <p class="Error message" hidden>Please enter a value ></p></div>
 
-          <label>Last name</label>
-          <input type="text" />
-          <p>Error message</p>
- <label>Telefon nummer</label>
-          <input type="tel" />
-          <p>Error message</p>
-          <label>
-          <label>Email</label>
-          <input type="email" />
-          <p>Error message</p>
+        <div class="form-group">
+ <label for="tel">Telefon nummer</label>
+          <input type="tel" id="tel"name="tel"minlength="8" required/>
+          <p class="Error message" hidden>Please enter a value ></p></div>
+        
+          <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <p class="error-message" hidden>Please enter a value</p></div>
+
           <label>
             <input type="checkbox" />
             Accept terms
@@ -233,13 +235,18 @@
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
-          <p class="placeholder">
+          <div> <p>Fulde navn: <span id="full_name_output"></span></p>
+            <p>Telefon nummer: <span id="tel_output"></span></p>
+            <p>Email: <span id="email_output"></span></p>
+            <p>Terms accepted: <span id="terms_output"></span></p>
+            
+         <!-- <p class="placeholder">
             Fornavn <br />
             Efternavn<br />
             Dato <br />
             Alder <br />
             Email
-          </p>
+          </p>--></div>
         </article>
       </section>
     </main>
@@ -269,6 +276,7 @@
         </ul>
       </nav>
     </footer>
+ <script src="js/form.js"></script>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>

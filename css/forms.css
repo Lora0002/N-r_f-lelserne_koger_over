@@ -30,3 +30,95 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.1rlh;
+}
+
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.25rlh;
+  justify-self: start;
+}
+
+/* Pseudo-classes */
+
+button {
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.25rlh 0.5rlh;
+  border: 1px solid #305065;
+  color: white;
+  box-shadow: 15px;
+  background-color: #305065;
+  border: 10px;
+}
+/* Hover-styles */
+button:hover {
+  background: #5e929f;
+  border: 1px solid #305065;
+}
+
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
+}
+
+/*udfyld selv boks*/
+form {
+  accent-color: deeppink;
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.1rlh;
+}
+
+.form-group:has(:required) label::after {
+  content: " *";
+  color: red;
+}
+
+.form-group:has(:user-invalid) input {
+  outline: 3px solid #f005;
+  border-color: darkred;
+}
+input {
+  border: 1px solid #305065;
+  padding: 0.25rlh;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+}
+.errormessage {
+  display: block;
+  color: darkred;
+}
+:focus-visible {
+  outline: 2px solid green;
+  outline-offset: 1px;
+  /* evt. box-shadow */
+}
+
+/*klik af bokse*/
+label {
+  display: block;
+}
+
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.75ch;
+  justify-self: start;
+}
