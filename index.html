@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="icon" type="image/webp" href="images/favicon_grøn.webp" />
     <title>Emergency Site</title>
   </head>
   <body id="frontpage">
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html">
+            <img src="images/Logo_grøn.webp" alt="logo" />
+          </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -35,7 +38,7 @@
       <div id="main-disclamer-content">
         <img src="warning" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
+          <h1>DANMARK ER INVADERET AF FØLELSER</h1>
           <p class="sub">Underrubrik</p>
         </div>
       </div>
@@ -43,46 +46,275 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="images/pigerdergraeder_ny.svg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Nærkontakt</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Kan du ikke stoppe med at græde. her er 3 strategier til at stoppe
+              følelsesstormen
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+
+            <details class="teaser">
+              <summary class="cta_btn">Læs mere</summary>
+              <p>indhold</p>
+              <a href="instruction.html" class="cta_btn">Se mere</a>
+            </details>
           </div>
         </article>
+
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="images/checkmark.webp" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Har du svært ved at stoppe med at græde</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Tilmeld dig her og bliv kontaktet af en og snak om dine følelser
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+
+            <details class="teaser">
+              <summary class="cta_btn">Læs mere</summary>
+              <p>indhold</p>
+              <a href="register.html" class="cta_btn">Se mere</a>
+            </details>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Den skjulte tristhed</h3>
+          <p>Når unge smiler udadtil, men kæmper indeni</p>
+          <img src="images/nyhed_1.webp" alt="news_img" />
+
+          <button popovertarget="popup" class="cta_btn">Læs mere</button>
+
+          <!-- Nyheden -->
+          <div popover id="popup">
+            <div ="news_popover">
+              <button>Luk</button>
+              <h4>
+                Hvorfor er så mange unge kede af det? En stille krise i en
+                larmende verden
+              </h4>
+              <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+              <img src="images/nyhed_1.webp" alt="news_img" />
+              <p>
+                De smiler i skolegården, tager billeder til sociale medier og
+                siger, at de har det “fint”. Men bag de rolige svar gemmer sig
+                en voksende stilhed: alt for mange unge føler sig kede af det,
+                stressede eller tomme uden helt at vide hvorfor.
+              </p>
+              <p>
+                Ifølge nyere undersøgelser rapporterer flere unge end nogensinde
+                før, at de kæmper med tristhed, ensomhed og pres. Ikke fordi de
+                nødvendigvis mangler noget konkret – men fordi verden omkring
+                dem er blevet svær at navigere i.
+              </p>
+              <p><strong>Et konstant pres på at være “på”</strong></p>
+              <p>
+                Unge vokser op i en tid, hvor sammenligning aldrig stopper.
+                Sociale medier bombarderer dem med billeder af andres perfekte
+                liv, succes og smil. Samtidig mærker mange et pres for at
+                præstere – i skolen, i sociale relationer, i udseende og
+                fremtidsplaner. Resultatet? En generation, der føler, de skal
+                være noget hele tiden – og at det aldrig er helt nok.
+              </p>
+              <p><strong>Når sorgen ikke har et navn</strong></p>
+              <p>
+                Mange unge beskriver, at de er kede af det “uden grund”. Det er
+                ikke nødvendigvis en depression – men en følelsesmæssig
+                overbelastning. De lever i et tempo, hvor der sjældent er plads
+                til at mærke sig selv. Følelser bliver skubbet væk, og til sidst
+                melder kroppen sig – med træthed, tårer eller en tung følelse af
+                meningsløshed. Derfor er det vigtigt, at voksne omkring unge tør
+                tage tristheden alvorligt – også når den ikke giver mening.
+                Nogle gange har unge ikke brug for løsninger, men for nogen der
+                lytter og siger: “Det giver mening, at du har det sådan.”
+              </p>
+              <p><strong>Små skridt mod håb</strong></p>
+              <p>
+                Der er heldigvis meget, der kan hjælpe: at tale åbent om
+                følelser, skrue ned for sammenligning, få frisk luft, bevæge
+                sig, og opsøge fællesskaber, hvor man kan være sig selv. At være
+                ked af det betyder ikke, at man er svag – det betyder, at man
+                har brug for at blive mødt med ro og forståelse.
+              </p>
+              <p><strong>Et stille håb</strong></p>
+              <p>
+                Bag tallene og tårerne findes en generation, der tør mærke efter
+                – og det er i sig selv et håbstegn. For når unge tør vise,
+                hvordan de virkelig har det, kan vi sammen begynde at skabe en
+                verden, hvor ingen skal gemme deres tristhed bag et smil. “Du
+                behøver ikke have en grund for at have det svært. Du behøver
+                bare nogen, der vil forstå det.”
+              </p>
+            </div>
+          </div>
         </article>
+
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>At græde offentligt, poste privat</h3>
+          <p>Dine følelser har fået en platform</p>
+          <img src="images/nyhed_2.webp" alt="news_img" />
+          <button popovertarget="popup01" class="cta_btn">Læs mere</button>
+          <div popover id="popup01">
+            <div ="news_popover">
+              <button>Luk</button>
+              <h4>
+                At græde offentligt, poste privat - dine følelser har fået en
+                platform
+              </h4>
+              <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+              <img src="images/nyhed_2.webp" alt="news_img" />
+              <p>
+                Livet er rodet. Det larmer. Det vælter ind. Og når dine tårer
+                ikke vil stoppe, føles det som en slags nødsituation. I dag ser
+                vi det overalt: mennesker, der græder på TikTok.
+                Story-time-videoer, hvor nogen siger: “Og så begyndte jeg bare
+                at græde …” De får millioner af visninger. Du scroller,
+                genkender følelsen og tænker: “Det kunne være mig.”
+              </p>
+              <p>
+                <strong>Hvorfor vi bliver fanget af græde-storytimen</strong>
+              </p>
+              <p>
+                Når nogen deler et sammenbrud på video, føles det ægte. Vi
+                bliver draget af sårbarheden — et ansigt, en stemme, tårer.
+                Formatet giver tilladelse: “Det er okay at have det sådan.” For
+                nogle bliver det at filme sine tårer en måde at bearbejde
+                følelser højt på — eller at blive set og bekræftet af andre.
+              </p>
+              <p><strong>Men hvad hvis tårerne ikke stopper?</strong></p>
+              <p>
+                Hvis du mærker, at din følelsesmæssige grænse for længst er
+                overskredet — måske græder du flere gange om ugen, måske vågner
+                du allerede tung om morgenen — så er det ikke en “trend”. Det er
+                din virkelighed. Du lever ikke bare en story-time. Du lever i
+                den. Og ofte bliver det et loop: overvældelse → tårer → deling
+                (eller lysten til det) → lettelse → nye tårer. Et loop, der
+                holder dig fast i gråden i stedet for at føre dig ud af den.
+              </p>
+              <p><strong>Hvad det sociale gråd-trigger kan gøre</strong></p>
+              <ul>
+                <li>
+                  Forstærke følelsen: Når du ser andre græde, siger din hjerne:
+                  “Ja, det er alvorligt, jeg må også græde.”
+                </li>
+                <li>
+                  Forsinke helingen: Hvis du bliver i video-loopet, kan du undgå
+                  at mærke, hvad der ligger under: sorg, frygt, udmattelse.
+                </li>
+                <li>
+                  Skabe ensomhed: Selv om du føler dig set online, kan du stadig
+                  sidde alene bagefter og ikke vide, hvem du skal række ud til.
+                </li>
+              </ul>
+
+              <p><strong>Hvad du kan gøre, når gråden fortsætter</strong></p>
+              <ol>
+                <li>
+                  Pause skærmen. Giv dig selv en times ro uden story-times, især
+                  dem der spejler din egen smerte.
+                </li>
+                <li>
+                  Navngiv følelsen. Spørg dig selv: “Hvad græder jeg egentlig
+                  over?”
+                </li>
+                <li>
+                  Find et anker. En ven, terapeut eller dagbog — nogen eller
+                  noget, du kan betro dig til.
+                </li>
+                <li>
+                  Skab små ritualer. En gåtur, te, rolig musik. Ikke som kur,
+                  men som trøst.
+                </li>
+                <li>
+                  Husk: det er ikke pinligt. Dine tårer er ikke et show. De er
+                  et signal.
+                </li>
+              </ol>
+            </div>
+          </div>
         </article>
+
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Græd, men fald ikke sammen</h3>
+          <p>Sådan finder du fodfæste, når alt vælter</p>
+          <img src="images/nyhed_3.webp" alt="news_img" />
+          <button popovertarget="popup02" class="cta_btn">Læs mere</button>
+          <div popover id="popup02">
+            <div ="news_popover">
+              <button>Luk</button>
+              <h4>
+                Når tårerne ikke vil stoppe: At finde ro midt i følelsesstormen
+              </h4>
+              <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+              <img src="images/nyhed_3.webp" alt="news_img" />
+              <p>
+                Der er tidspunkter, hvor tårerne bare ikke stopper. Uanset hvor
+                meget du forsøger at tage dig sammen, så bliver alt for meget.
+                Måske føler du dig tom, udmattet eller skamfuld over at reagere
+                så voldsomt – men der er intet svagt i at græde. Tværtimod er
+                det kroppens måde at fortælle dig, at du har brug for omsorg.
+              </p>
+              <p><strong>Tårer er et signal – ikke et nederlag</strong></p>
+
+              <p>
+                Crying er en naturlig reaktion, når følelserne overstiger det,
+                vi kan rumme. Kroppen bruger tårer til at frigive stresshormoner
+                og skabe lettelse. Men hvis gråden bliver ved, kan det være et
+                tegn på, at noget dybere er på spil – som stress, angst,
+                depression eller gammel sorg, du ikke har fået bearbejdet.
+              </p>
+              <p>
+                <strong>Et simpelt billede at huske: </strong>gråden er som et
+                tryk på en sikkerhedsventil. Den slipper noget ud, men den
+                fortæller også, at der er for meget pres inden i. Når gråden
+                tager over Hvis du græder næsten hver dag, uden at vide hvorfor,
+                eller det går ud over din søvn, dit arbejde eller dine
+                relationer, er det vigtigt at række ud. Det kan være til en
+                læge, terapeut eller en person, du stoler på.
+              </p>
+              <p>
+                Du behøver ikke have “en god grund” for at få hjælp. Gråden er
+                grunden – den viser, at du har brug for støtte.
+              </p>
+              <p>
+                <strong
+                  >Små skridt, når du ikke kan stoppe med at græde Når tårerne
+                  kommer, kan du prøve at:</strong
+                >
+              </p>
+              <ol>
+                <li>
+                  Trække vejret langsomt. Ind i 4 sekunder, hold i 7, pust ud i
+                  8. Det beroliger kroppen.
+                </li>
+                <li>
+                  Føle noget koldt. En kold genstand i hånden kan hjælpe dig
+                  tilbage til nuet.
+                </li>
+                <li>
+                  Sige det højt. “Jeg er overvældet.” Når du sætter ord på
+                  følelsen, mister den lidt af sin magt.
+                </li>
+                <li>
+                  Bevæg kroppen. En kort gåtur eller blid strækning kan løsne
+                  følelsesmæssig spænding.
+                </li>
+                <li>Tale med nogen. Du skal ikke bære det alene.</li>
+              </ol>
+              <p>
+                Det kan føles som om, du går i stykker, men ofte er gråden et
+                tegn på, at noget i dig prøver at hele. Tårerne peger ikke mod
+                svaghed, men mod behovet for ro, forståelse og kærlighed – både
+                fra dig selv og andre.
+              </p>
+              <p>
+                Lad gråden være begyndelsen på at forstå dig selv bedre. Du er
+                ikke alene, du er ikke forkert – du er menneske.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
     </main>

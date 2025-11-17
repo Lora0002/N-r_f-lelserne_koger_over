@@ -1,0 +1,137 @@
+article [popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#pop01 p {
+  margin-block: 1rem; /* giver luft og og under hvert p */
+  line-height: 1.6; /* lidt mere læselinjerum */
+}
+
+#pop02 p {
+  margin-block: 1rem; /* giver luft og og under hvert p */
+  line-height: 1.6; /* lidt mere læselinjerum */
+}
+
+#pop03 p {
+  margin-block: 1rem; /* giver luft og og under hvert p */
+  line-height: 1.6; /* lidt mere læselinjerum */
+}
+
+details[open] div {
+  padding: 20px 0 0 0;
+}
+
+details[open] summary::after {
+  content: "X";
+}
+
+.cta_btn {
+  display: flex;
+  justify-content: space-between;
+}
+.cta_btn:hover {
+  opacity: 0.9;
+  cursor: pointer; /*hånd når du klikker*/
+}
+
+.news_card button {
+  border: none;
+}
+
+.news_card button:hover {
+  background-color: #6b6844; /*ændrefarve*/
+  color: antiquewhite; /*ændrefarve*/
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #305065;
+  color: aliceblue; /*ændrefarve*/
+  border: none;
+  font-size: 1rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer; /*hånd når du klikker*/
+}
+
+/*teaser*/
+.details.teaser {
+  margin-top: 1rem; /*giver luft*/
+}
+
+/*acordian*/
+
+/*knap udseende*/
+summary.cta_btn {
+  display: flex;
+  justify-content: space-between; /*pil til højre, tekst til venstre*/
+  align-items: center;
+  background-color: #305065;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer; /*hånd når du klikker*/
+  font-weight: 600;
+  transition: background-color 0.3 ease;
+}
+
+summary.cta_btn:hover {
+  background-color: #5e929f; /*ændrefarve*/
+}
+/*når man klikker på knappen*/
+details[open] summary.cta_btn {
+  background-color: #305065;
+}
+
+/*fold ud tekst*/
+details.teaser p {
+  margin-top: 0.8rem;
+  line-height: 1.6;
+  color: black;
+}
+
+/*pil*/
+summary.cta_btn::after {
+  content: "->"; /*pil når knap er lukket*/
+  transition: transform 0.3s ease;
+}
+
+/*skift pil til kryds når knap åbner*/
+details[open] summary.cta_btn::after {
+  content: "x"; /*x til luk*/
+}
+
+#main-disclaimer-content {
+  display: flex;
+  align-items: center;
+  gap: 15px; /*afstand mellem logo og tekst*/
+}
+
+/*logo størrelse*/
+#main-disclaimer-content img {
+  width: 240px; /*gør logo mindre*/
+  height: auto;
+}
+
+/*overskrift udseende*/
+#main-disclaimer-content h1 {
+  font-size: 1.5rem; /*overskfrift bliver tydelig og stor*/
+  font-weight: 700; /*gør font fed*/
+}
+/*underrubrik udseende*/
+#main-disclaimer-content .sub {
+  font-size: 1rem;
+  margin-top: 5px; /*giver lidt luft*/
+}
