@@ -23,7 +23,7 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #305065;
+  --color-headline-bg: #000;
   --color-headline-text-page: #fffae2;
 
   /* Tekst */
@@ -42,7 +42,7 @@
   /* news-cards */
   --color-news-bg: #fffae2;
   --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #5e929f;
+  --color-cta-newscard-bg: #b1ae77;
   --color-cta-newscard-bg-inverted: #a7c1e2;
 
   /* Fonts */
