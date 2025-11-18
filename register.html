@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/forms.css" />
-    <link rel="icon" type="image/png" href="images/favicon_grøn.webp" />
+    <link rel="icon" type="image/webp" href="images/favicon_grøn.webp" />
     <title>Emergency Site</title>
   </head>
   <body id="register">
@@ -20,7 +20,7 @@
       <nav>
         <div id="logotype-wrapper" class="logo">
           <a href="index.html">  <a href="index.html">
-            <img src="images/logo_hvid.webp" alt="logo" /> </a>
+            <img src="images/Logo_grøn.webp" alt="logo" /> </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -42,7 +42,7 @@
           <p>Skriv dig op til en samtale med en der er klar til at lytte</p>
         </article>
 
-        <form>
+        <form id="webform">
           <fieldset>
             <legend>
               <h3>Hvad drejer det sig om</h3>
@@ -85,13 +85,13 @@
               Skuffelse eller smerte
             </label>
           </fieldset>
-          <form>
+          
             <label for="message">Andet?</label>
             <textarea name="message" id="message"> </textarea>
-          </form>
           
-        </form>
-<form>
+          
+        
+
           <fieldset>
             <legend>
               <h3>Hvor slemt er det fra 1-10</h3>
@@ -209,17 +209,17 @@
 
           <button>Submit button</button>
         </form>-->
-        <form id="webform">
+      
           <div class="form-group">
           <label for="name">Fulde navn</label>
           <input type="text" id="name" name="full_name" required  />
           
-          <p class="Error message" hidden>Please enter a value ></p></div>
+          <p class="error-message" hidden>Please enter a value ></p></div>
 
         <div class="form-group">
  <label for="tel">Telefon nummer</label>
           <input type="tel" id="tel"name="tel"minlength="8" required/>
-          <p class="Error message" hidden>Please enter a value ></p></div>
+          <p class="error-message" hidden>Please enter a value ></p></div>
         
           <div class="form-group">
           <label for="email">Email</label>
@@ -227,7 +227,7 @@
           <p class="error-message" hidden>Please enter a value</p></div>
 
           <label>
-            <input type="checkbox" />
+            <input type="checkbox" name="terms" />
             Accept terms
           </label>
           <button>Submit</button>

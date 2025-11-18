@@ -6,10 +6,21 @@ article [popover]::backdrop {
 [popover] {
   max-height: 90vh;
   max-width: 50ch;
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   border-radius: 30px;
+}
+
+.popover-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-inline: auto;
+  margin-top: 40px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+  max-width: 55ch;
+  cursor: pointer;
 }
 
 #pop01 p {
@@ -104,13 +115,13 @@ details.teaser p {
 
 /*pil*/
 summary.cta_btn::after {
-  content: "->"; /*pil når knap er lukket*/
+  content: "→"; /*pil når knap er lukket*/
   transition: transform 0.3s ease;
 }
 
 /*skift pil til kryds når knap åbner*/
 details[open] summary.cta_btn::after {
-  content: "x"; /*x til luk*/
+  content: "X"; /*x til luk*/
 }
 
 #main-disclaimer-content {
@@ -121,8 +132,8 @@ details[open] summary.cta_btn::after {
 
 /*logo størrelse*/
 #main-disclaimer-content img {
-  width: 240px; /*gør logo mindre*/
-  height: auto;
+  width: 80px; /*gør logo mindre*/
+  height: 80px;
 }
 
 /*overskrift udseende*/
