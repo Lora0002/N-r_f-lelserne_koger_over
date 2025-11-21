@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+
+    <link rel="stylesheet" href="css/custom.css" />
+
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
@@ -27,6 +29,12 @@
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Skift tema">
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+        </button>
+
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -36,10 +44,10 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="images/favicon_grøn.webp" alt="ICON" />
-        <div>
+        <img src="images/forsideikon.webp" alt="ICON" />
+        <div id="main-disclaimer-text">
           <h1>DANMARK ER INVADERET AF FØLELSER</h1>
-          <p class="sub">Underrubrik</p>
+          <p class="sub">Et trygt rum for store tanker og stærke følelser</p>
         </div>
       </div>
     </section>
@@ -342,34 +350,64 @@
         </article>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <img
+            src="images/logo_hvid.webp"
+            alt="følelsesstorm logo"
+            class="footer-logo"
+          />
+          <p>
+            Følelser kan ramme som en storm – pludseligt, voldsomt og uden
+            advarsel. Her på siden hjælper vi dig med at forstå, hvad der sker
+            indeni, når alt vælter. Du får simple redskaber til at finde ro,
+            genvinde overblikket og mærke dig selv igen. Uanset om du græder
+            meget, føler dig presset, eller bare har svært ved at finde
+            fodfæste, er du ikke alene. Vi guider dig gennem stormen – ét skridt
+            ad gangen.
+          </p>
+          <div class="socials">
+            <a href="#"><img src="logo" alt="Facebook" /></a>
+            <a href="#"><img src="logo" alt="LinkedIn" /></a>
+          </div>
+        </div>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+        <div class="footer-section">
+          <h3>Virksomhed</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hjælp</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>Nyhedsbrev</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Tilmeld mig nyhedsbrev</button>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="darkmode.js"></script>
+    <!--<script src="js/main.js"></script>-->
   </body>
 </html>
