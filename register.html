@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,14 +19,15 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html">  <a href="index.html">
-            <img src="images/Logo_grøn.webp" alt="logo" /> </a>
+          <a href="index.html">
+            <img src="images/Logo_grøn.webp" alt="logo" />
+          </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
-         <button id="theme-toggle" class="theme-toggle" aria-label="Skift tema">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Skift tema">
           <span class="toggle-track">
             <span class="toggle-thumb"></span>
           </span>
@@ -62,7 +63,7 @@
               />
               Hjertesorger
             </label>
-            <label for="Sorg og tab">
+            <label for="Sorg_og_tab">
               <input
                 type="checkbox"
                 id="sorg_og_tab"
@@ -71,7 +72,7 @@
               />
               Sorg og tab
             </label>
-            <label for="Stress og overvældelse">
+            <label for="Stress_og_overvældelse">
               <input
                 type="checkbox"
                 id="Stress_og_overvældelse"
@@ -80,7 +81,7 @@
               />
               Stress og overvældelse
             </label>
-            <label for="Skuffelse eller smerte">
+            <label for="Skuffelse_eller_smerte">
               <input
                 type="checkbox"
                 id="Skuffelse_eller_smerte"
@@ -90,12 +91,9 @@
               Skuffelse eller smerte
             </label>
           </fieldset>
-          
-            <label for="message">Andet?</label>
-            <textarea name="message" id="message"> </textarea>
-          
-          
-        
+
+          <label for="message">Andet?</label>
+          <textarea name="message" id="message"></textarea>
 
           <fieldset>
             <legend>
@@ -103,97 +101,47 @@
             </legend>
 
             <label for="1">
-              <input
-                type="radio"
-                id="1"
-                name="omfang"
-                value="1"
-              />
+              <input type="radio" id="et" name="omfang" value="1" />
               1
             </label>
             <label for="2">
-              <input
-                type="radio"
-                id="2"
-                name="omfang"
-                value="2"
-              />
+              <input type="radio" id="to" name="omfang" value="2" />
               2
             </label>
             <label for="3">
-              <input
-                type="radio"
-                id="3"
-                name="omfang"
-                value="3"
-              />
+              <input type="radio" id="tre" name="omfang" value="3" />
               3
             </label>
             <label for="4">
-              <input
-                type="radio"
-                id="4"
-                name="omfang"
-                value="4"
-              />
+              <input type="radio" id="fire" name="omfang" value="4" />
               4
             </label>
-             <label for="5">
-              <input
-                type="radio"
-                id="5"
-                name="omfang"
-                value="5"
-              />
+            <label for="5">
+              <input type="radio" id="fem" name="omfang" value="5" />
               5
             </label>
-             <label for="6">
-              <input
-                type="radio"
-                id="6"
-                name="omfang"
-                value="6"
-              />
+            <label for="6">
+              <input type="radio" id="seks" name="omfang" value="6" />
               6
             </label>
-             <label for="7">
-              <input
-                type="radio"
-                id="7"
-                name="omfang"
-                value="7"
-              />
+            <label for="7">
+              <input type="radio" id="syv" name="omfang" value="7" />
               7
             </label>
-             <label for="8">
-              <input
-                type="radio"
-                id="8"
-                name="omfang"
-                value="8"
-              />
+            <label for="8">
+              <input type="radio" id="otte" name="omfang" value="8" />
               8
             </label>
-             <label for="9">
-              <input
-                type="radio"
-                id="9"
-                name="omfang"
-                value="9"
-              />
+            <label for="9">
+              <input type="radio" id="ni" name="omfang" value="9" />
               9
             </label>
-             <label for="10">
-              <input
-                type="radio"
-                id="10"
-                name="omfang"
-                value="10"
-              />
+            <label for="10">
+              <input type="radio" id="ti" name="omfang" value="10" />
               10
             </label>
           </fieldset>
-        <!--  <form id="webform">
+          <!--  <form id="webform">
           <label>First name</label>
           <input type="text" />
           <p>Error message</p>
@@ -214,22 +162,25 @@
 
           <button>Submit button</button>
         </form>-->
-      
-          <div class="form-group">
-          <label for="name">Fulde navn</label>
-          <input type="text" id="name" name="full_name" required  />
-          
-          <p class="error-message" hidden>Please enter a value ></p></div>
 
-        <div class="form-group">
- <label for="tel">Telefon nummer</label>
-          <input type="tel" id="tel"name="tel"minlength="8" required/>
-          <p class="error-message" hidden>Please enter a value ></p></div>
-        
           <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <p class="error-message" hidden>Please enter a value</p></div>
+            <label for="name">Fulde navn</label>
+            <input type="text" id="name" name="full_name" required />
+
+            <p class="error-message" hidden>Please enter a value ></p>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Telefon nummer</label>
+            <input type="tel" id="tel" name="tel" minlength="8" required />
+            <p class="error-message" hidden>Please enter a value ></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <p class="error-message" hidden>Please enter a value</p>
+          </div>
 
           <label>
             <input type="checkbox" name="terms" />
@@ -241,22 +192,24 @@
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
-          <div> <p>Fulde navn: <span id="full_name_output"></span></p>
+          <div>
+            <p>Fulde navn: <span id="full_name_output"></span></p>
             <p>Telefon nummer: <span id="tel_output"></span></p>
             <p>Email: <span id="email_output"></span></p>
             <p>Terms accepted: <span id="terms_output"></span></p>
-            
-         <!-- <p class="placeholder">
+
+            <!-- <p class="placeholder">
             Fornavn <br />
             Efternavn<br />
             Dato <br />
             Alder <br />
             Email
-          </p>--></div>
+          </p>-->
+          </div>
         </article>
       </section>
     </main>
-   
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section about">
@@ -313,9 +266,9 @@
         </div>
       </div>
     </footer>
- <script src="js/form.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/burger.js"></script>
-     <script src="darkmode.js"></script>
+    <script src="darkmode.js"></script>
     <!-- <script src="js/main.js"></script>-->
   </body>
 </html>
