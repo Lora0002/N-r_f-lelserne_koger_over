@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />   <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
+ 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
@@ -26,6 +26,13 @@
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
+     
+ <button id="theme-toggle" class="theme-toggle" aria-label="Skift tema">
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+        </button>
+
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -332,9 +339,9 @@
           </g>
         </svg>
 
-        <button id="krop">Krop</button>
-        <button id="udtryk">Udtryk</button>
-        <button id="forbindelse">Forbindelse</button>
+        <button id="Krop">Krop</button>
+        <button id="Udtryk">Udtryk</button>
+        <button id="Forbindelse">Forbindelse</button>
       </section>
       <section class="info-text">
         <h2>KROP!!!</h2>
@@ -380,7 +387,7 @@ Brug papir, en serviet eller din notesbog.<br /><br /> Alt tæller, så længe d
         </aside>
       </section>-->
 
-      (boks 3)
+    <!-- (boks 3)--> 
       <!--   <section class="info-text">
         <h2>FORBINDELSE !!!</h2>
         <article>
@@ -402,34 +409,67 @@ At blive hørt kan dæmpe stormen med det samme. Ingen løsninger – bare ord o
       </section>-->
     </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+    
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <img
+            src="images/logo_hvid.webp"
+            alt="følelsesstorm logo"
+            class="footer-logo"
+          />
+          <p>
+            Følelser kan ramme som en storm – pludseligt, voldsomt og uden
+            advarsel. Her på siden hjælper vi dig med at forstå, hvad der sker
+            indeni, når alt vælter. Du får simple redskaber til at finde ro,
+            genvinde overblikket og mærke dig selv igen. Uanset om du græder
+            meget, føler dig presset, eller bare har svært ved at finde
+            fodfæste, er du ikke alene. Vi guider dig gennem stormen – ét skridt
+            ad gangen.
+          </p>
+          <div class="socials">
+            <a href="#"><img src="logo" alt="Facebook" /></a>
+            <a href="#"><img src="logo" alt="LinkedIn" /></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Virksomhed</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hjælp</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>Nyhedsbrev</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Tilmeld mig nyhedsbrev</button>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/instruction.js"></script>
-    <script src="js/main.js"></script>
+     <script src="darkmode.js"></script>
+    <!--<script src="js/main.js"></script> -->
+
   </body>
 </html>
