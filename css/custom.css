@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --color-bg: #aac9b9; /* page background /*
+  --color-bg: #aac9b9; /* page background */
 
   /* Header */
   --color-head-bg: #305065;
@@ -47,10 +47,10 @@
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
-  /* --font-weight-light: 300;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700; */
+  --font-weight-bold: 700;
 
   /* Text sizes */
   --logotype-size: 2rem;
@@ -61,9 +61,46 @@
   --cta-text-size: 1rem;
   --followup-text-size: 1rem;
   --form-submit-size: 1rem;
+}
+
+:root {
+  /* page background */
+  --color-bg: light-dark(#aac9b9, #707070);
+
+  /* Header */
+
+  --color-head-bg: light-dark(#5e929f, #305065);
+  /* Logotype */
+  --color-logotype-bg: light-dark(#000, #000);
+  --color-text-logotype: light-dark(#000, #fffae2);
+
+  /* Global menu */
+  --color-menu-bg: light-dark(#a7c1e2, #a7c1e2);
+  /* Links */
+  --color-link-bg: light-dark(#fffae2, #494949);
+  --color-link-hover: light-dark(#fffae2, #fffae2); /* used */
+  --color-link-active: light-dark(#fffae2, #b1ae77); /* used */
+
+  /* Headlines og rubrik */
+  --color-headline-bg: light-dark(#000, #000);
+  --color-headline-text-page: light-dark(#fffae2, #494949);
+
+  /* Tekst */
+  --color-text: light-dark(#000, #000);
+  --color-text-inverted: light-dark(#fffae2, #fffae2);
+
+  /* Cards */
+  --color-card-bg: light-dark(#ffffff, #494949);
+  --color-cta-card-bg: light-dark(#5e929f, #2e4c50);
+
+  /* news-cards */
+  --color-news-bg: light-dark(#fffae2, #494949);
+  --color-news-bg-inverted: light-dark(#dbe2f5, #272727);
+  --color-cta-newscard-bg: light-dark(#b1ae77, #6b6844);
+  --color-cta-newscard-bg-inverted: light-dark(#a7c1e2, #d9e3ff);
 
   /* Infographics */
-  --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #5e929f;
-  --color-infobox-2-bg: #e1eabb;
+  --color-info-bg: light-dark(#ffffff, #272727);
+  --color-infobox-1-bg: light-dark(#5e929f, #2e4c50);
+  --color-infobox-2-bg: light-dark(#e1eabb, #4c5844);
 }
